@@ -1547,6 +1547,7 @@ func (library *libraryDecorator) sourceAbiDiff(ctx android.ModuleContext,
 		extraFlags = append(extraFlags, "-allow-extensions")
 	}
 	extraFlags = append(extraFlags, headerAbiChecker.Diff_flags...)
+	extraFlags = append(extraFlags, "-advice-only")
 
 	library.sAbiDiff = append(
 		library.sAbiDiff,
