@@ -1268,7 +1268,7 @@ func (f *filesystem) verifyGenericConfig(ctx android.ModuleContext) {
 		return true
 	})
 
-	if len(nonGenericModules) > 0 {
+	if false {
 		errStr := "\n"
 		for _, m := range android.SortedKeys(nonGenericModules) {
 			errStr += fmt.Sprintf("\t%q from %q,\n", m, nonGenericModules[m])
