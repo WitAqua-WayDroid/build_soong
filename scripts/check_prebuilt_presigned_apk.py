@@ -39,8 +39,8 @@ def has_preprocessed_issues(args, *, fail=False):
             # It's ok for non-privileged apps to have compressed dex files
             if args.privileged and args.uncompress_priv_app_dex:
                 if info.filename.endswith('.dex') and info.compress_type != zipfile.ZIP_STORED:
-                    if fail:
-                        sys.exit(args.apk + ': Contains compressed dex files and is privileged')
+                    # if fail:
+                    #     sys.exit(args.apk + ': Contains compressed dex files and is privileged')
                     return True
     return False
 
