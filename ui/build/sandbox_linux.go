@@ -298,6 +298,8 @@ func (c *Cmd) wrapSandbox() {
 		// TODO: try out cgroups
 		"--disable_clone_newcgroup",
 
+		"--disable_clone_newnet",
+
 		// Only log important warnings / errors
 		"-q",
 	)
