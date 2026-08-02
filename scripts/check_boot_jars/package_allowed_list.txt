@@ -268,3 +268,5 @@ com.xiaomi.extensions.*
 
 # MTK adds
 com\.mediatek\..*
+# Waydroid
+vendor\.waydroid\..*
